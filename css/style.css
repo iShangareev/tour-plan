@@ -553,4 +553,10 @@ template {
     width: 99px;
   }
 }
+
+@media (max-width: 380px) {
+  .container {
+    max-width: 340px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
