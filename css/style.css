@@ -667,8 +667,8 @@ template {
     background-color: #333333;
   }
   .stars {
-    -ms-flex-preferred-size: content;
-        flex-basis: content;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
     margin-bottom: 5px;
     margin-right: 7px;
   }
