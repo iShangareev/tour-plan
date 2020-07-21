@@ -672,6 +672,7 @@ template {
 }
 
 .booking {
+  font-family: 'Nunito';
   background-color: #0A223D;
   color: #ffff;
   border-radius: 8px;
