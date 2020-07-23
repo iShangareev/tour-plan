@@ -1,7 +1,8 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
-  .hotel-slide
+  .hotel__slider
+    margin-right: 20px
     width: 590px
   .hotel
     &-slider
@@ -107,12 +108,17 @@
   .map
     width: 100%  
   .newsletter
+    &-title
+      &__strong
+        font-size: 36px
     &-wrapper
       flex-direction: column
       width: 92%
       max-width: 576px
       align-items: flex-start
   .reviews
+    &__title
+      font-size: 30px
     &-slider
       &__item
         padding: 0 30px 30px
@@ -140,10 +146,21 @@
     width: 100%
   .newsletter
     padding: 76px 0 83px 0
+    &-title
+      &__strong
+        font-size: 30px
     &__title
+      font-size: 18px
       margin-bottom: 37px
+  .reviews
+    &__title
+      font-size: 22px
+
 @meia (max-width: 380px)    
   .container
     max-width: 340px
   .subscribe
     width: 100%
+  .reviews
+    &__title
+      font-size: 14px

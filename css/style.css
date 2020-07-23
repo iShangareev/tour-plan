@@ -1045,7 +1045,8 @@ template {
   .container {
     max-width: 960px;
   }
-  .hotel-slide {
+  .hotel__slider {
+    margin-right: 20px;
     width: 590px;
   }
   .hotel-slider__image {
@@ -1205,6 +1206,9 @@ template {
   .map {
     width: 100%;
   }
+  .newsletter-title__strong {
+    font-size: 36px;
+  }
   .newsletter-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1215,6 +1219,9 @@ template {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  .reviews__title {
+    font-size: 30px;
   }
   .reviews-slider__item {
     padding: 0 30px 30px;
@@ -1255,8 +1262,15 @@ template {
   .newsletter {
     padding: 76px 0 83px 0;
   }
+  .newsletter-title__strong {
+    font-size: 30px;
+  }
   .newsletter__title {
+    font-size: 18px;
     margin-bottom: 37px;
+  }
+  .reviews__title {
+    font-size: 22px;
   }
 }
 
@@ -1266,6 +1280,9 @@ template {
   }
   .subscribe {
     width: 100%;
+  }
+  .reviews__title {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=style.css.map */
