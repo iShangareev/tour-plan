@@ -16,7 +16,7 @@
   .footer
     &__input
       flex-basis: 100%
-    &-button   
+    &__button   
       &__box
         width: 100%
         display: flex
@@ -97,13 +97,22 @@
       &-form
         grid-column: span 5
         grid-row: 4  
-    &-button   
+    &__button   
       &__box
         width: 100%
         display: flex
         flex-direction: row
         justify-content: space-between
         align-items: center
+    &__disclaimer
+      flex-direction: column
+      justify-content: flex-start 
+      &__list  
+        padding: 0
+        margin-left: 0  
+      &__payments
+        margin-left: 0 
+        margin-right: auto  
 @media (max-width: 768px)
   .container,
     max-width: 576px
@@ -202,7 +211,7 @@
   .footer
     &__input
       flex-basis: 100%
-    &-button   
+    &__button   
       &__box
         display: flex
         flex-direction: column-reverse
@@ -262,7 +271,7 @@
       &-form
         grid-row: 7
         grid-column: 1
-    &-button   
+    &__button   
       &__box
         display: flex
         flex-direction: column-reverse
@@ -277,7 +286,7 @@
     &__title
       font-size: 14px
   .footer
-    &-button   
+    &__button   
       &__box
         display: flex
         flex-direction: column-reverse
