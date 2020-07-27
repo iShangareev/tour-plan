@@ -1,0 +1,24 @@
+.container-packages
+  display: grid
+  height: 1250px
+  grid-template-columns: 350px 350px 350px
+  grid-template-rows: 500px 500px 500px
+  grid-column-gap: 30px 
+  grid-row-gap: 30px
+  padding: 40px 0 70px 0
+  grid-auto-rows: 100px
+  border: solid 1px black
+.packages-box
+  width: 350px
+  height: 500px
+  border: solid 1px black
+  &:nth-child(1)
+    display: grid
+    grid-template-columns: 350px
+    grid-template-rows: 500px
+    grid-column-gap: 0px 
+    grid-row-gap: 0px
+.packages-box-inf
+  &__img
+    width: 350px
+    height: 250px
