@@ -1814,6 +1814,12 @@ template {
 }
 
 @media (max-width: 576px) {
+  .navbar__search--mobile_visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 70%;
+  }
   .logo {
     width: 99px;
   }
