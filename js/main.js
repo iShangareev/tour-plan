@@ -59,4 +59,20 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
   }
+
+  document.body.addEventListener(
+    "keyup",
+    function (e) {
+      var key = e.keyCode;
+
+      if (key == 27) {
+        event.preventDefault();
+        var modalOverlay = $(".modal__overlay");
+        var modalDialog = $(".modal__dialog");
+        modalOverlay.removeClass("modal__overlay--visible");
+        modalDialog.removeClass("modal__dialog--visible");
+      }
+    },
+    false
+  );
 });
