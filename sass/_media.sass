@@ -23,6 +23,10 @@
         flex-direction: row
         justify-content: space-between
         align-items: center
+  .modal
+    &__dialog
+      width: 478px
+      padding: 40px
 @media (max-width:992px)
   .container,
   .newsletter-wrapper
@@ -113,6 +117,9 @@
       &__payments
         margin-left: 0 
         margin-right: auto  
+  .modal
+    &__dialog
+      width: 378px
 @media (max-width: 768px)
   .container,
     max-width: 576px
@@ -258,6 +265,9 @@
         align-items: flex-start
     &__info
       margin-bottom: 20px
+  .modal
+    &__dialog
+      padding: 30px
 @media (max-width: 576px)
   .navbar
     &__search
@@ -323,6 +333,21 @@
         flex-direction: column-reverse
     &__info
       margin-bottom: 20px 
+  .modal
+    &__dialog
+      width: 278px
+      padding: 20px
+    &__button   
+      &__box
+        display: flex
+        flex-direction: column-reverse
+        width: 100%
+    &__info
+      margin-bottom: 20px 
+    &__title
+      font-size: 16px
+    &__input
+      font-size: 14px
 // @meia (max-width: 380px)    
 //   .container
 //     max-width: 340px
