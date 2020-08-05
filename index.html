@@ -9,18 +9,45 @@
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <title>Best Tour Plan - Hotel Booking</title>
   </head>
   <body>
     <header class="navbar navbar--mobile_fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a href="#" class="logo" data-aos="fade-right">
             <img
               src="img/Best-tour-plan.svg"
               alt="Logo: Best Tour Plan"
               class="logo__image"
             />
+          </a>
+          <form
+            action="#"
+            class="search navbar__search navbar__search--mobile_hidden"
+          >
+            <input
+              type="text"
+              class="search__input"
+              placeholder="Search-Location"
+            />
+            <button class="search__button">
+              <img src="img/Search.svg" alt="Icon: search" />
+            </button>
+          </form>
+
+          <a
+            href="#"
+            class="user navbar__user navbar__user--mobile_hidden"
+            data-aos="fade-left"
+          >
+            <img
+              src="img/user-avatar.png"
+              alt="avatar: Nathan"
+              class="user__avatar"
+            />
+            <span class="user__name">Nathan</span>
           </a>
 
           <!-- /.user -->
@@ -129,7 +156,7 @@
             </p>
           </div>
           <!-- /.hotel-info__text -->
-          <div class="rating hotel-info__rating">
+          <div class="rating hotel-info__rating" data-aos="flip-right">
             <span class="rating__text">User Rattings</span>
             <span class="rating__counter">4.5/5</span>
           </div>
@@ -265,7 +292,9 @@
     </section>
     <section class="reviews">
       <div class="container">
-        <h2 class="reviews__title">What people thinks about us</h2>
+        <h2 class="reviews__title" data-aos="fade-down">
+          What people thinks about us
+        </h2>
 
         <div class="swiper-container reviews-slider">
           <div class="swiper-wrapper">
@@ -394,7 +423,11 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <img
               src="img/activity-1.jpg"
               alt="The curious corner of chamarel"
@@ -404,7 +437,11 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <img
               src="img/activity-2.jpg"
               alt="Gymkhana club golf course"
@@ -414,7 +451,11 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <img
               src="img/activity-3.jpg"
               alt="Tamarind falls hiking trip - full day"
@@ -424,7 +465,11 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
             <img
               src="img/activity-4.jpg"
               alt="The blue marine discovery quest"
@@ -693,6 +738,7 @@
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
