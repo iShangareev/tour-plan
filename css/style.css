@@ -446,16 +446,16 @@ template {
   padding: 31px 0;
 }
 
+.navbar-menu__item--mobile_visible {
+  display: none;
+}
+
 .navbar-menu__link {
   color: #ffff;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
-}
-
-.navbar-menu__item--mobile_visible {
-  display: none;
 }
 
 .logo {
