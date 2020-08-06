@@ -26,6 +26,9 @@
       align-items: start
       grid-row: 2 / 4
       grid-column: span 2
+  &__legal
+    display: flex
+    flex-direction: column
   &__contact
     &-details
       grid-column: span 2
@@ -93,15 +96,21 @@
     color: #E0E0E0
   &__disclaimer
     width: 100%
+    margin-top: 95px
     display: flex
     flex-direction: row
     justify-content: center
     grid-column: span 4
+    &__payments
+      grid-column: span 4
+      margin-left: auto
     &__list
       display: flex
       flex-direction: row
       list-style: none
       margin-left: auto
+      margin-top: 0
+      margin-bottom: 0
       &__item
         width: content
         margin-right: 15px
