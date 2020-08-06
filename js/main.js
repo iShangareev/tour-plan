@@ -97,5 +97,4 @@ $(document).ready(function () {
   });
   // AOS свистелки пирделки
   AOS.init();
-  var blazy = new Blazy();
 });
