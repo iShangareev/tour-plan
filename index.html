@@ -299,9 +299,13 @@
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
 
-        <form class="subscribe newsletter__subscribe">
+        <form
+          action="send.php"
+          method="POST"
+          class="subscribe newsletter__subscribe"
+        >
           <input
-            type="text"
+            type="email"
             class="subscribe__input"
             placeholder="Your email address"
           />
