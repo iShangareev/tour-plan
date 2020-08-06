@@ -300,7 +300,7 @@
         </h2>
 
         <form
-          action="send.php"
+          action="subscribe.php"
           method="POST"
           class="subscribe newsletter__subscribe"
         >
@@ -308,6 +308,8 @@
             type="email"
             class="subscribe__input"
             placeholder="Your email address"
+            name="email"
+            required
           />
           <button class="subscribe__button">Send</button>
         </form>
@@ -714,7 +716,7 @@
           <img src="img/close.svg" alt="icon: close" />
         </a>
         <h3 class="modal__title modal__title--mb-3">Send us a message</h3>
-        <form action="send.php" method="POST" class="modal__form form">
+        <form class="modal__form form">
           <input
             type="text"
             class="input modal__input"
