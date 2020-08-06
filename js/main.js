@@ -46,10 +46,9 @@ $(document).ready(function () {
   closeModalButton.on("click", closeModal);
 
   function openModal() {
-    var modalOverlay = $(".modal__overlay");
-    var modalDialog = $(".modal__dialog");
-    modalOverlay.addClass("modal__overlay--visible");
-    modalDialog.addClass("modal__dialog--visible");
+    var targetModal = $(this).attr("data-href");
+    $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
+    $(targetModal).find(".modal__dialog").addClass("modal__dialog--visible");
   }
 
   function closeModal(event) {
