@@ -74,7 +74,13 @@ $(document).ready(function () {
     },
     false
   );
-
+  $('[name="phone"]').on("input", function () {
+    $(this).val(
+      $(this)
+        .val()
+        .replace(/[A-Za-z\u0410-\u042f\u0430-\u044f\u0401\u0451]/, "")
+    );
+  });
   // Валидатор форм
   $(".form").each(function () {
     $(this).validate({
@@ -82,6 +88,7 @@ $(document).ready(function () {
       messages: {
         name: {
           required: "Enter a name",
+          minlength: "The name must be at least 2 letters",
         },
         email: {
           required: "We need your email address to contact you",
@@ -89,6 +96,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "Phone is required",
+          minlength: "Please enter at least 10 characters.",
         },
       },
     });
