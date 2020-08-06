@@ -175,12 +175,68 @@
     border: none
     color: $light
     cursor: pointer
-.map
+.ymap__container 
   width: 347px
   height: 213px
-  background-color: black 
+  position: relative
   border-radius: 10px
   overflow: hidden
+  cursor: pointer
+  background: url('../img/ymap.jpg') #ffffff no-repeat
+  background-position: center center
+  background-size: cover
+  box-shadow: 0 0 2em  0 rgba(0,0,0,.2)
+#map-yandex 
+  position: relative
+  z-index: 150
+  width: 347px
+  height: 213px
+  cursor: pointer
+  background-color: transparent
+.loader 
+  position: absolute
+  z-index: 15
+  box-sizing: border-box
+  width: 100%
+  height: 100%
+  overflow: hidden
+  color: #000000
+  transition: opacity .7s ease
+  opacity: 0
+  background-color: rgba(0,0,0,.55)
+.loader:after,
+.loader:before 
+  box-sizing: border-box
+.loader.is-active 
+  top: 0
+  opacity: 1
+.loader-default:after 
+  position: absolute
+  top: calc(50% - 24px)
+  left: calc(50% - 24px)
+  width: 48px
+  height: 48px
+  content: ''
+  animation: rotation 1s linear infinite
+  border: solid 8px #ffffff
+  border-left-color: transparent
+  border-radius: 50%
+@keyframes name-of-animation
+  0%
+    transform: rotate(0)
+  100%
+    transform: rotate(359deg)
+@keyframes blink 
+  0%
+    opacity: .5
+  100% 
+    opacity: 1
+  
+// .map
+
+//   background-color: black 
+
+//   overflow: hidden
     
     
 
