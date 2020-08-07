@@ -1,3 +1,8 @@
+#name-error, #phone-error, #email-error
+  position: absolute
+  left: 0
+  bottom: 0
+  // white-space: nowrap
 .modal
   &__form
     display: flex
@@ -49,8 +54,15 @@
     text-transform: uppercase
     text-align: center
   &__input
-    width: 100%
-    margin-top: 15px
+    margin-top: 5px !important
+    // width: 100%
+    // margin-top: 15px
+    &-box
+      width: 100%
+      position: relative
+      padding-bottom: 20px
+      margin: 0
+      // overflow: hidden
   &__message
     width: 100%
     min-height: 123px
@@ -67,5 +79,4 @@
     font-size: 12px
     line-height: 15px
     color: #E0E0E0
-
 
