@@ -385,20 +385,45 @@
   .logo
     width: 99px
   .hotel
+    padding-bottom: 0px
+    &-info
+      &__name
+        margin-top: -5px
+    &-wrapper
+      margin-top: -17px
     &__slider
       margin-bottom: 20px
     &-slider
-      height: 250px
+      margin-top: 15px
+      height: 178px
+      margin-bottom: 14px
+      margin-right: 6px
+      width: 95%
+      margin-left: 0px
+    &-right
+      width: 95%
+      margin-top: 6px
+  .map
+    height: 221px
+    img
+      height: 179px
+    &__overlay
+      // height: 221px
   .subscribe
-    width: 100%
+    width: 95%
   .newsletter
-    padding: 76px 0 83px 0
+    height: 313px
+    padding: 8px 0 83px 0
+    &-wrapper
+      span
+        font-size: 30px
     &-title
       &__strong
         font-size: 30px
     &__title
-      font-size: 18px
-      margin-bottom: 37px
+      margin-top: 59px
+      margin-bottom: 32px
+      font-size: 20px
   .newsletter
     &-title
       &__strong
@@ -409,25 +434,62 @@
       max-width: 576px
       align-items: flex-start
   .reviews
+    padding: 6px 0 0px 0
+    &-slider
+      &__profile
+        margin-top: -47px
+        margin-bottom: 31px
+        margin-left: -22px
+      &__button
+        &--prev
+          left: 38%           
+        &--next
+          right: 45%
     &__title
-      font-size: 22px
+      font-size: 20px
+      line-height: 1
+      margin-top: 37px
+  .activities
+    padding-top: 0px
+    padding-bottom: 35px
+    &__title
+      font-size: 18px
+      margin-bottom: 35px
   .card
-    width: 100%
+    width: 95%
+    height: 255px
+    margin-bottom: 23px
     &__title
       width: 200px 
   .footer
+    padding-top: 0px
     &-wrapper
       grid-template-columns: 1fr
     &__logo
       grid-row: 1
       grid-column: 1
+      width: 99px
+      margin-top: 68px
     &__social
       &-network
+        display: flex
+        flex-direction: column
         grid-row: 2
         grid-column: 1
+        h3
+          margin-left: 0px
+          margin-top: 0px
+      &-links
+        margin-top: 20px
+        margin-left: 3px
+    &__title
+      &--inline
+        margin: 4px 0px 0px 6px
     &__additional
+      margin-left: -8px
       grid-row: 3
       grid-column: 1
+      ul      
     &__categories
       grid-row: 4
       grid-column: 1
