@@ -37,7 +37,25 @@ $(document).ready(function () {
   menuButton.on("click", function () {
     $(".navbar-bottom").toggleClass("navbar-bottom--visible");
   });
-
+  //Google maps
+  $(".map").click(function () {
+    var map = $(this).attr("data-map");
+    var map_width = $(window).width();
+    var map_height = $(this).attr("map-height");
+    $(this).css("height", map_height);
+    if (map_width > 640) {
+      map_width = 350;
+    }
+    $(this).html(
+      '<iframe src="' +
+        map +
+        '" width="' +
+        map_width +
+        '" height="' +
+        map_height +
+        '" frameborder="0" style="border-radius: 10px"  allowfullscreen></iframe>'
+    );
+  });
   // Модальное окно
 
   var modalButton = $("[data-toggle=modal]");
