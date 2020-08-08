@@ -486,41 +486,63 @@
       &--inline
         margin: 4px 0px 0px 6px
     &__additional
+      width: 286px
       margin-left: -8px
-      grid-row: 3
-      grid-column: 1
-      ul      
-    &__categories
       grid-row: 4
       grid-column: 1
-    &__legal
+      margin-left: -7px
+      margin-top: -8px
+      ul      
+    &__categories
       grid-row: 5
       grid-column: 1
+      margin-top: -8px
+      margin-left: -4px
+    &__legal
+      grid-row: 3
+      grid-column: 1        
     &__contact
       display: flex
       flex-direction: column
       &-details
         grid-row: 6
         grid-column: span 3
+        margin: -19px 28px -26px 4px
+        h3
+          margin-left: -5px
+        p
+          margin-left: -4px
+          line-height: 1.5
+        ul
+          padding: 0px 0px 0px 2px
       &-form
         grid-row: 7
         grid-column: span 4
+        h3
+          margin-bottom: 10px
+          margin-top: 29px
     &__legal
       display: flex
       flex-direction: column
       h3
-        margin: -2px 0px 16px 0px
+        margin: -11px 0px 7px 0px
       ul
-        padding: 0px 0px 0px 0px
+        padding: 10px 0px 0px 0px
+    &__icon
+      &-wrapper
+        min-width: 24px
     &__button   
       &__box
         display: flex
         flex-direction: column-reverse
+        height: 74px
     &__info
       margin-bottom: 20px 
     &__disclaimer
       flex-direction: column
       justify-content: flex-start 
+      margin-top: -22px
+      margin-left: 0px
       &__list  
         padding: 0
         margin-left: 0  
@@ -528,6 +550,8 @@
         margin-left: 0 
         margin-right: auto 
         margin-top: 10px
+    &__form
+      width: 88%
   .modal
     &__dialog
       width: 278px
