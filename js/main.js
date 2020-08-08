@@ -110,7 +110,7 @@ $(document).ready(function () {
         },
         email: {
           required: "Email is required",
-          email: "Your email address must be in the format of name@domain.com",
+          email: "Email must be in the format of name@domain.com",
         },
         phone: {
           required: "Phone is required",

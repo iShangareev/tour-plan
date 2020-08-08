@@ -219,7 +219,7 @@
       width: 378px
     &__info
       margin-top: 10px
-      margin-left: 39px
+      margin-left: 36px
 @media (max-width: 768px)
   .container,
     max-width: 576px
@@ -375,6 +375,18 @@
   .modal
     &__dialog
       padding: 30px
+@media only screen and (max-height: 660px)
+  .navbar
+    &-bottom
+      &--visible
+        height: 96%
+        overflow: scroll
+  .modal
+    &__dialog
+      height: 96%
+      overflow: scroll
+    &__info
+      margin-left: 15px
 @media (max-width: 576px)
   // *
   //   border: 1px solid black
@@ -386,12 +398,15 @@
         &_visible
           display: flex
           width: 70%
+          button 
+            right: 0px
     &--mobile
       &_fixed
         width: 100%
     &-top
       margin-left: 12px
-      margin-right: 28px
+      margin-right: 28px 
+      padding-bottom: 30px       
   .logo
     width: 99px
   .hotel
@@ -447,7 +462,7 @@
     padding: 6px 0 0px 0
     &-slider
       &__profile
-        margin-top: -47px
+        margin-top: -43px
         margin-bottom: 31px
         margin-left: -22px
       &__button
@@ -469,6 +484,8 @@
     width: 95%
     height: 255px
     margin-bottom: 23px
+    h3
+      width: 100%
     &__title
       width: 200px 
   .footer
@@ -579,7 +596,8 @@
     &__dialog
       width: 278px
       padding: 20px
-    &__button   
+    &__button  
+      margin-top: -2px 
       &__box
         display: flex
         flex-direction: column-reverse
