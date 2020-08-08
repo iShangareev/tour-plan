@@ -24,18 +24,36 @@
       visibility: visible
       opacity: 1
   &__dialog
+    display: flex
+    flex-direction: column
     position: fixed
+    height: 485px
     top: 50%
     left: 50%
-    max-width: 478px
+    width: 478px
     padding: 33px 88px
+    background-color: $dark
     transform: translate(-50%, -50%)
     color: $light
-    background-color: $dark
     border-radius: 8px
     z-index: 101
     visibility: hidden
     opacity: 0
+    transition: all 0.3s
+    // position: fixed
+    // top: 50%
+    // left: 50%
+    // max-width: 435px
+    // max-height: 444px
+    // max-width: 478px
+    // padding: 33px 88px
+    // transform: translate(-50%, -50%)
+    // color: $light
+    // background-color: $dark
+    // border-radius: 8px
+    // z-index: 101
+    // visibility: hidden
+    // opacity: 0
     &--visible
       visibility: visible
       opacity: 1
@@ -46,37 +64,67 @@
     text-decoration: none
     cursor: pointer
   &__title
-    font-style: normal
     font-weight: bold
     font-size: 18px
     line-height: 23px
-    margin-bottom: 15px
+    margin: 0
     text-transform: uppercase
     text-align: center
+    margin-bottom: 8px
+    // font-style: normal
+    // font-weight: bold
+    // font-size: 18px
+    // line-height: 23px
+    // margin-bottom: 15px
+    // text-transform: uppercase
+    // text-align: center
   &__input
     margin-top: 5px !important
-    // width: 100%
-    // margin-top: 15px
+    width: 100%
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    padding: 0 23px
     &-box
       width: 100%
       position: relative
       padding-bottom: 20px
       margin: 0
+      padding-bottom: 11px
       // overflow: hidden
   &__message
     width: 100%
     min-height: 123px
-    margin-top: 15px
+    margin-bottom: 0px
+    margin-top: 2px
+    font-size: 12px
+    line-height: 15px
+    color: #BDBDBD
+    // width: 100%
+    // min-height: 123px
+    // margin-top: 15px
   &__button
+    width: 160px
+    height: 50px
+    padding: 18px
+    font-weight: bold
+    font-size: 12px
+    list-style: 15px
+    border-radius: 4px
     &__box 
       width: 100%
   &__button
     margin-top: 15px
   &__info
-    margin-left: 40px
-    font-style: normal
     font-weight: bold
     font-size: 12px
     line-height: 15px
-    color: #E0E0E0
+    color: $footer-text-color
+    margin-left: 42px
+    // margin-left: 40px
+    // font-style: normal
+    // font-weight: bold
+    // font-size: 12px
+    // line-height: 15px
+    // color: #E0E0E0
 
