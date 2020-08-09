@@ -80,6 +80,12 @@
     // text-transform: uppercase
     // text-align: center
   &__input
+    &::-webkit-input-placeholder
+      color: #BDBDBD
+  &__input
+    &::-moz-placeholder  
+      color: #BDBDBD
+  &__input
     margin-top: 5px !important
     width: 100%
     font-weight: normal
@@ -94,13 +100,18 @@
       padding-bottom: 11px
       // overflow: hidden
   &__message
+    &::-webkit-input-placeholder
+      color: #BDBDBD
+  &__message
+    &::-moz-placeholder
+      color: #BDBDBD 
+  &__message
     width: 100%
     min-height: 123px
     margin-bottom: 0px
     margin-top: 5px
     font-size: 12px
     line-height: 15px
-    color: #BDBDBD
     // width: 100%
     // min-height: 123px
     // margin-top: 15px
@@ -121,7 +132,7 @@
     font-size: 12px
     line-height: 15px
     color: $footer-text-color
-    margin-left: 42px
+    margin-left: 40px
     // margin-left: 40px
     // font-style: normal
     // font-weight: bold

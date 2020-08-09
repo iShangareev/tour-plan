@@ -110,11 +110,16 @@
     text-decoration: none
     color: inherit
   &__input
+    &::-webkit-input-placeholder
+      color: #BDBDBD
+  &__input
+    &::-moz-placeholder  
+      color: #BDBDBD
+  &__input
     width: 100%
     font-size: 12px
     padding: 0px 82px 0px 25px
-    font-family: 'Muli', sans-serif
-    // color: #BDBDBD
+    font-family: 'Muli', sans-serif  
     &-group
       position: relative
       padding-bottom: 20px
@@ -124,6 +129,12 @@
         font-size: 12px !important
       // flex-basis: 48%
       // align-self: flex-start
+  &__message
+    &::-webkit-input-placeholder
+      color: #BDBDBD
+  &__message
+    &::-moz-placeholder
+      color: #BDBDBD  
   &__message
     flex-basis: 100%
     margin-bottom: 22px

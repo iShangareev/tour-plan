@@ -39,7 +39,7 @@
   .navbar
     &-top
       padding-top: 30px
-      padding-bottom: 27px
+      padding-bottom: 31px
     &__search
       margin-left: auto
     &-menu
@@ -295,7 +295,7 @@
       padding-top: 0
       justify-content: space-between
     &-info
-      padding-right: 20px
+      // padding-right: 20px
       &__text
         width: 100%
       &__description
@@ -381,9 +381,15 @@
       &--visible
         height: 96%
         overflow: scroll
+  .footer
+    &__message
+      margin-top: 0px
+      margin-bottom: 36px
+    &__info
+      margin-bottom: 11px
   .modal
     &__dialog
-      height: 77%
+      height: 87%
       overflow: scroll
     &__info
       margin-left: 15px
@@ -410,6 +416,7 @@
   .logo
     width: 99px
   .hotel
+    // width: 105%
     padding-bottom: 0px
     &-info
       &__name
@@ -423,10 +430,10 @@
       height: 178px
       margin-bottom: 14px
       margin-right: 6px
-      width: 95%
+      width: 100%
       margin-left: 0px
     &-right
-      width: 95%
+      width: 100%
       margin-top: 6px
   .map
     height: 221px
@@ -470,9 +477,11 @@
         margin-top: -43px
         margin-bottom: 31px
         margin-left: -22px
+        img
+          margin-left: 24px
       &__button
         &--prev
-          left: 38%           
+          left: 45%           
         &--next
           right: 45%
     &__title
@@ -486,7 +495,7 @@
       font-size: 18px
       margin-bottom: 35px
   .card
-    width: 95%
+    width: 100%
     height: 255px
     margin-bottom: 23px
     h3
@@ -562,6 +571,8 @@
       width: 100% 
       &-group
         padding-bottom: 17px
+        label
+          bottom: 2px !important
     &__message
       margin-bottom: 21px
     &__legal
@@ -600,6 +611,7 @@
   .modal
     &__dialog
       width: 278px
+      // height: 87%
       padding: 20px
     &__button  
       margin-top: -2px 
@@ -615,6 +627,9 @@
     &__input
       &-group
         font-size: 14px
+  #email-error
+    position: relative
+    top: 3px
   #map-yandex 
     width: 455px
     height: 225px
